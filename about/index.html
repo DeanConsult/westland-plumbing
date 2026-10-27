@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Westland Plumbing Co</title>
+  <link rel="canonical" href="https://www.fiveguysplumbingwestland.com/about/" />
+  <meta name="description" content="About Westland Plumbing Co — 20+ years of plumbing in Westland MI. Residential and commercial. 24-hour emergency service. Call 734-519-7075." />
+  <meta name="robots" content="index, follow" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --blue: #46308c; --blue-dark: #35236d; --dark: #130f24; --white: #fff; --gray: #f5f6f8; --muted: #6b7280; --radius: 8px; }
+    body { font-family: 'Segoe UI', system-ui, sans-serif; color: #1a1a1a; background: var(--white); }
+    a { color: inherit; text-decoration: none; }
+    nav { background: var(--dark); padding: 0 24px; position: sticky; top: 0; z-index: 100; }
+    .nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .nav-brand { color: var(--white); font-weight: 800; font-size: 1.05rem; }
+    .nav-brand span { color: #b3a4e0; }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a { color: rgba(255,255,255,0.85); font-size: 0.92rem; font-weight: 500; }
+    .btn-call { background: var(--blue); color: var(--white); padding: 9px 20px; border-radius: var(--radius); font-weight: 700; font-size: 0.88rem; white-space: nowrap; }
+    .hamburger { display: none; background: none; border: none; font-size: 1.6rem; color: var(--white); cursor: pointer; padding: 4px 8px; }
+    @media (max-width: 768px) {
+      .nav-links { display: flex; position: fixed; top: 64px; left: 0; right: 0; background: var(--dark); flex-direction: column; gap: 0; padding: 0 24px; max-height: 0; overflow: hidden; transition: max-height .35s ease; }
+      .nav-links.open { max-height: 320px; padding-top: 8px; padding-bottom: 8px; }
+      .nav-links a { display: block; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
+      .btn-call { display: none; }
+      .hamburger { display: block; }
+    }
+    .ph { background: var(--dark); padding: 60px 24px; }
+    .ph-inner { max-width: 1100px; margin: 0 auto; }
+    .ph-label { font-size: 0.78rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #b3a4e0; margin-bottom: 10px; }
+    .ph h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 800; color: var(--white); margin-bottom: 14px; }
+    .ph p { color: rgba(255,255,255,0.72); max-width: 560px; line-height: 1.75; }
+    .story { max-width: 1100px; margin: 0 auto; padding: 80px 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+    @media (max-width: 768px) { .story { grid-template-columns: 1fr; } }
+    .story-label { font-size: 0.78rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--blue); margin-bottom: 10px; }
+    .story h2 { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 800; color: var(--dark); margin-bottom: 20px; }
+    .story p { color: var(--muted); line-height: 1.8; margin-bottom: 16px; }
+    .values { background: var(--gray); padding: 80px 24px; }
+    .values-inner { max-width: 1100px; margin: 0 auto; }
+    .values-label { font-size: 0.78rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--blue); margin-bottom: 10px; }
+    .values h2 { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 800; color: var(--dark); margin-bottom: 40px; }
+    .values-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; }
+    .value-card { background: var(--white); border-radius: 12px; padding: 28px 24px; border-top: 4px solid var(--blue); box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+    .value-icon { font-size: 2rem; margin-bottom: 14px; }
+    .value-card h3 { font-size: 1rem; font-weight: 700; color: var(--dark); margin-bottom: 10px; }
+    .value-card p { font-size: 0.87rem; color: var(--muted); line-height: 1.7; }
+    .cta-band { background: var(--blue); padding: 60px 24px; text-align: center; }
+    .cta-band h2 { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 800; color: var(--white); margin-bottom: 10px; }
+    .cta-band p { color: rgba(255,255,255,0.82); max-width: 520px; margin: 0 auto 28px; }
+    .btn-white { display: inline-block; background: var(--white); color: var(--blue); padding: 14px 32px; border-radius: var(--radius); font-weight: 700; font-size: 1rem; }
+    footer { background: var(--dark); padding: 48px 24px 24px; }
+    .footer-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; margin-bottom: 36px; }
+    @media (max-width: 640px) { .footer-inner { grid-template-columns: 1fr; } }
+    .footer-brand { font-weight: 800; font-size: 1.05rem; color: var(--white); margin-bottom: 12px; }
+    .footer-brand span { color: #b3a4e0; }
+    .footer-desc { color: rgba(255,255,255,0.55); font-size: 0.85rem; line-height: 1.7; }
+    .footer-col h4 { color: rgba(255,255,255,0.5); font-size: 0.72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 14px; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-col ul li a { color: rgba(255,255,255,0.7); font-size: 0.88rem; }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+    .footer-bottom p { color: rgba(255,255,255,0.4); font-size: 0.8rem; }
+    .footer-bottom a { color: rgba(255,255,255,0.4); font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <div class="nav-brand"><a href="/">Westland <span>Plumbing Co</span></a></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about/">About Us</a></li>
+      <li><a href="/services/">Services</a></li>
+      <li><a href="/#contact">Free Estimate</a></li>
+    </ul>
+    <a href="tel:7345197075" class="btn-call">Call 734-519-7075</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
+  </div>
+</nav>
+
+<div class="ph">
+  <div class="ph-inner">
+    <p class="ph-label">About Westland Plumbing Co</p>
+    <h1>Westland&rsquo;s Most Trusted Plumbing Company</h1>
+    <p>Over 20 years of residential and commercial plumbing in Westland MI. 24-hour emergency service, honest pricing, and plumbers who truly care.</p>
+  </div>
+</div>
+
+<div class="story">
+  <div>
+    <p class="story-label">Our Story</p>
+    <h2>Two Decades of Plumbing Excellence in Westland MI</h2>
+    <p>Westland Plumbing Co is an association of licensed plumbers with over 20 years of experience in the plumbing industry. Our goal is to always provide the highest level of customer service, and our plumbers have been proudly serving Westland for two decades.</p>
+    <p>All of our plumbers go through rigorous training and re-training on the most up-to-date plumbing advancements, so they are prepared to handle any job when they arrive at your home. Most of our plumbers have 10 to 20+ years of experience in their field.</p>
+    <p>Our dispatchers are trained to get you help as quickly as possible, and in many cases one of our specialists can give you a general estimate right over the phone. For larger projects we come out, review the work, and provide a written estimate. Our plumbers clean up after every job and leave your home as clean as they found it.</p>
+  </div>
+  <div>
+    <p class="story-label">Our Commitment</p>
+    <h2>Honest Plumbers Who Put Customers First</h2>
+    <p>We understand that most plumbing issues are unexpected. We make it our mission to handle every customer&rsquo;s issue as if it were our own, and we promise to always complete your job as quickly as possible and make it our top priority.</p>
+    <p>Our estimates are always at fair market value and competitively priced, so our services never break the bank. We offer no-pressure in-home estimates for any size job, and we can often give estimates over the phone for select services. Every plumber we employ will do their best to service your needs at the lowest cost.</p>
+    <p>In November 2021 we became affiliates with Plumbing News and More, a well respected online plumbing publication. We also offer 24-hour emergency service and evening and weekend appointments for those times when you need a plumber outside normal hours. We want to be your plumber for life.</p>
+  </div>
+</div>
+
+<div class="values">
+  <div class="values-inner">
+    <p class="values-label">Why Choose Us</p>
+    <h2>What Makes Westland Plumbing Co Different</h2>
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="value-icon">&#128295;</div>
+        <h3>20+ Years Experience</h3>
+        <p>Two decades of residential and commercial plumbing experience in Westland and Metro Detroit. We have seen it all and can handle any plumbing challenge.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">&#127942;</div>
+        <h3>Award-Winning Service</h3>
+        <p>Named one of the best plumbers in the area by Metro Detroit Review in January 2021, and listed among the top 100 service companies in Metro Detroit by the Michigan Review Board in June 2021.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">&#128222;</div>
+        <h3>24-Hour Emergency Service</h3>
+        <p>Plumbing emergencies don&rsquo;t wait for business hours. We offer 24-hour emergency service so you can reach us whenever you have a plumbing crisis.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">&#128200;</div>
+        <h3>Honest, Reasonable Pricing</h3>
+        <p>We are 100% honest in all our estimates and advice. No upcharges, no unnecessary services &mdash; just fair pricing and great work every time.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cta-band">
+  <h2>Ready to Schedule a Plumber?</h2>
+  <p>Call us today or fill out our form for a free estimate. We offer evening, weekend, and 24-hour emergency appointments.</p>
+  <a href="tel:7345197075" class="btn-white">Call 734-519-7075</a>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">Westland <span>Plumbing Co</span></div>
+      <p class="footer-desc">Residential and commercial plumbing in Westland MI and Metro Detroit. 20+ years experience, 24-hour emergency service, honest pricing.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Pages</h4>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About Us</a></li>
+        <li><a href="/services/">Services</a></li>
+        <li><a href="/#contact">Free Estimate</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="/services/">Drain Repair</a></li>
+        <li><a href="/services/">Water Heaters</a></li>
+        <li><a href="/services/">Pipe Repair</a></li>
+        <li><a href="/services/">Emergency Plumbing</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="yr"></span> Westland Plumbing Co. All rights reserved.</p>
+    <div style="display:flex;gap:16px;">
+      <a href="/privacy-policy/">Privacy Policy</a>
+      <a href="/resources/">Resources</a>
+    </div>
+  </div>
+</footer>
+<script>
+  document.getElementById("yr").textContent = new Date().getFullYear();
+  document.getElementById("hamburger").addEventListener("click", function() {
+    document.getElementById("navLinks").classList.toggle("open");
+  });
+</script>
+</body>
+</html>
